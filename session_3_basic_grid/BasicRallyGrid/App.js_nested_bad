@@ -1,0 +1,33 @@
+Ext.define('CustomApp', {
+    extend: 'Rally.app.App',
+    componentCls: 'app',
+
+    launch: function() {
+      console.log('our first app');
+
+      Ext.create('Rally.data.WsapiDataStore', {
+          model: 'User Story',
+          autoLoad: true,
+          listeners: {
+              load: function(myStore, myData, success) {
+                  console.log('got data!', myStore, myData);
+
+                  
+                  var myGrid =Ext.create('Rally.ui.grid.Grid', {
+                    store: myStore,
+                    columnCfgs: [
+                      'FormattedID',
+                      'Name'
+                    ]
+                  });
+
+                  console.log('my grid', myGrid);
+                  console.log('what is this', this);
+                  this.add(myGrid);
+              },
+              scope: this
+          },
+          fetch: ['Name', 'ScheduleState']
+        });
+    }
+});
