@@ -17,11 +17,17 @@ Session 3 - Dev Environment &amp; Basic Grid
 --------------------------------------------
 This session (video, 40min) shows how to build a basic grid app using a simple and effective development environment.  This this env, you can start writing a new app in under 3min!
 
-Session 4 - Grid++
-------------------
-This session (video, TBDmin) extends the grid from session #3 and adds pulldowns, event handlers, and custom columns.  We also show how to do server-side filtering of data coming out of Rally.
+Session 4 - Interactive Grid
+----------------------------
+This session (video, 60min) extends the grid from session #3 and adds pulldowns, event handlers, and custom columns.  We also show how to do server-side filtering of data coming out of Rally.  Easter
+Egg Alert!  What IS?! that sign above my shoulder?
 
 Session 5 - Tips, Tricks, and Patterns
 --------------------------------------
 This session (video, 25min) covers 10 tips, tricks, and patterns to level-up your skills and optimize your javascript & app building experience.
+
+Session 6 - DT's Dev Environment - Mac, Chrome, and Tmux
+--------------------------------------------------------
+This session (video, 7min) shows my finely tuned dev environment that minimizes the mouse and maximizes productivity using Chrome, Chromt Terminal, and Tmux (all on a Mac - but you can set this up
+elsewhere).
 
