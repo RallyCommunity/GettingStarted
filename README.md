@@ -28,10 +28,10 @@ This session (video, TBDmin)  will refactor our previous defect grid.  We will n
 
 Session 6 - Tips, Tricks, and Patterns
 --------------------------------------
-This session (video, 25min) covers 10 tips, tricks, and patterns to level-up your skills and optimize your javascript & app building experience.
+This session ([video](https://www.youtube.com/watch?v=lusD0q4K4C4&list=PL3PQ-IsMxhG14aDViKxlPZASIrHatNkft&index=5), 25min) covers 10 tips, tricks, and patterns to level-up your skills and optimize your javascript & app building experience.
 
 Session 7 - DT's Dev Environment - Mac, Chrome, and Tmux
 --------------------------------------------------------
-This session (video, 7min) shows my finely tuned dev environment that minimizes the mouse and maximizes productivity using Chrome, Chromt Terminal, and Tmux (all on a Mac - but you can set this up
+This session ([video](https://www.youtube.com/watch?v=VDnSAEzsKcU&list=PL3PQ-IsMxhG14aDViKxlPZASIrHatNkft&index=6), 7min) shows my finely tuned dev environment that minimizes the mouse and maximizes productivity using Chrome, Chromt Terminal, and Tmux (all on a Mac - but you can set this up
 elsewhere).
 
