@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InteractiveRallyGrid</title>
+
+    <script type="text/javascript" src="/apps/2.0rc2/sdk.js"></script>
+
+    <script type="text/javascript">
+        Rally.onReady(function () {
+                Ext.define("CustomApp",{extend:"Rally.app.App",componentCls:"app",items:[{xtype:"container",itemId:"pulldown-container",layout:{type:"hbox",align:"stretch"}}],defectStore:void 0,defectGrid:void 0,launch:function(){var me=this;console.log("our second app"),me._loadIterations()},_loadIterations:function(){var me=this,iterComboBox=Ext.create("Rally.ui.combobox.IterationComboBox",{itemId:"iteration-combobox",fieldLabel:"Iteration",labelAlign:"right",width:300,listeners:{ready:me._loadSeverities,select:me._loadData,scope:me}});this.down("#pulldown-container").add(iterComboBox)},_loadSeverities:function(){var me=this,severityComboBox=Ext.create("Rally.ui.combobox.FieldValueComboBox",{itemId:"severity-combobox",model:"Defect",field:"Severity",fieldLabel:"Severity",labelAlign:"right",listeners:{ready:me._loadData,select:me._loadData,scope:me}});this.down("#pulldown-container").add(severityComboBox)},_getFilters:function(iterationValue,severityValue){var iterationFilter=Ext.create("Rally.data.wsapi.Filter",{property:"Iteration",operation:"=",value:iterationValue}),severityFilter=Ext.create("Rally.data.wsapi.Filter",{property:"Severity",operation:"=",value:severityValue});return iterationFilter.and(severityFilter)},_loadData:function(){var me=this,selectedIterRef=this.down("#iteration-combobox").getRecord().get("_ref"),selectedSeverityValue=this.down("#severity-combobox").getRecord().get("value"),myFilters=this._getFilters(selectedIterRef,selectedSeverityValue);console.log("my filter",""+myFilters),me.defectStore?(console.log("store exists"),me.defectStore.setFilter(myFilters),me.defectStore.load()):(console.log("creating store"),me.defectStore=Ext.create("Rally.data.wsapi.Store",{model:"Defect",autoLoad:!0,filters:myFilters,listeners:{load:function(myStore,myData,success){console.log("got data!",myStore,myData),me.defectGrid||me._createGrid(myStore)},scope:me},fetch:["FormattedID","Name","Severity","Iteration"]}))},_createGrid:function(myDefectStore){var me=this;me.defectGrid=Ext.create("Rally.ui.grid.Grid",{store:myDefectStore,columnCfgs:["FormattedID","Name","Severity","Iteration"]}),me.add(me.defectGrid)}});
+
+            Rally.launchApp('CustomApp', {
+                name:"InteractiveRallyGrid",
+	            parentRepos:""
+            });
+
+        });
+    </script>
+
+
+    <style type="text/css">
+        .app {
+     /* Add app styles here */
+}
+
+    </style>
+</head>
+<body></body>
+</html>
