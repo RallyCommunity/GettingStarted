@@ -1,7 +1,12 @@
 GettingStarted
 ==============
 
-A video-based guide to getting started writing apps and extending the Rally platform.
+A video-based guide ([playlist](http://www.youtube.com/playlist?list=PL3PQ-IsMxhG14aDViKxlPZASIrHatNkft)) to getting started writing apps and extending the Rally platform.
+
+The tools and exercises are expected to work on most modern platforms (Windows, Mac, Linux) and you are free to use any tools you like.  For these videos, I chose Mac/Chrome/Vim because it eliminated
+switching between windows during coding & testing.
+
+Enjoy!  Please send feedback.  dthomas at rallydev dot com.
 
 Session 1 - Intro
 -----------------
@@ -24,7 +29,7 @@ Egg Alert!  What IS?! that sign above my shoulder?
 
 Session 5 - Grid Refactored
 ----------------------------
-This session (video, TBDmin)  will refactor our previous defect grid.  We will not add any new features, but rather implement alternative (preferred!) patterns in the app code.
+This session ([video](http://www.youtube.com/watch?v=jr7-VYFmDTw&list=PL3PQ-IsMxhG14aDViKxlPZASIrHatNkft&index=4), 96min)  will refactor our previous defect grid.  We will not add any new features, but rather implement alternative (preferred!) patterns in the app code.  Learn about ExtJS IDs, xtypes, defining layouts, and more!
 
 Session 6 - Tips, Tricks, and Patterns
 --------------------------------------
