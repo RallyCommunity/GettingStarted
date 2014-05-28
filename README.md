@@ -40,3 +40,8 @@ Session 7 - DT's Dev Environment - Mac, Chrome, and Tmux
 This session ([video](https://www.youtube.com/watch?v=VDnSAEzsKcU&list=PL3PQ-IsMxhG14aDViKxlPZASIrHatNkft&index=6), 7min) shows my finely tuned dev environment that minimizes the mouse and maximizes productivity using Chrome, Chromt Terminal, and Tmux (all on a Mac - but you can set this up
 elsewhere).
 
+Session 8 - Hackathon Dev Environment - GitHub, Cloud9 IDE, Rally App Builder
+-----------------------------------------------------------------------------
+This session ([video](https://www.youtube.com/watch?v=8HsbfbB0OSE&list=PL3PQ-IsMxhG14aDViKxlPZASIrHatNkft&index=9), 23min) describes a lightweight, cloud-based development environment for coding,
+testing, saving, and deploying your changes.  No need to install tools locally!
+
